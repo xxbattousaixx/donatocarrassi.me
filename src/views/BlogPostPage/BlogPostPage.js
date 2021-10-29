@@ -1,4 +1,6 @@
-/*eslint-disable*/ import React from "react";
+/*eslint-disable*/ 
+import React, { useState, useEffect, useRef } from 'react';
+import { usePdf } from 'react-pdf-js';
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
@@ -21,17 +23,30 @@ import SectionText from "./Sections/SectionText.js";
 import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
 import SectionComments from "./Sections/SectionComments.js";
 import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
-
+import file from '../../assets/img/DAC2021CV.pdf'
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
 
 export default function BlogPostPage() {
+  const canvasEl = useRef(null);
+ 
+  const [loading, numPages] = usePdf({
+    file: {file},
+    canvasEl
+  });
+ 
+  useEffect(() => {
+    setPages(numPages);
+  }, [numPages]);
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
   const classes = useStyles();
+  const [page, setPage] = useState(1);
+  const [pages, setPages] = useState(null);
   return (
     <div>
       <Header
@@ -64,6 +79,7 @@ export default function BlogPostPage() {
         </div>
       </Parallax>
       <div className={classes.main}>
+      <canvas ref={canvasEl} />
         <div className={classes.container}>
           <SectionText />
           <SectionBlogInfo />
@@ -75,55 +91,16 @@ export default function BlogPostPage() {
         content={
           <div>
             <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-blog-post"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
+            
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com?ref=mkpr-blog-post"
+                href="https://www.donatocarrassi.me"
                 target="_blank"
               >
-                Creative Tim
               </a>{" "}
-              for a better web.
             </div>
           </div>
         }

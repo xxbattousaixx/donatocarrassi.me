@@ -245,48 +245,25 @@ export default function ContactUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-contact-us"
+                    href="https://www.donatocarrassi.me"
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    DC7
                   </a>
                 </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
+                
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com?ref=mkpr-contact-us"
+                href="https://www.donatocarrassi.me"
                 target="_blank"
               >
-                Creative Tim
+                DC7
               </a>{" "}
-              for a better web.
             </div>
           </div>
         }

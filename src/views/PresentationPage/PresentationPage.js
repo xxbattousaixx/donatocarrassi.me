@@ -38,7 +38,7 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Donato Carrassi"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -48,7 +48,7 @@ export default function PresentationPage() {
         }}
       />
       <Parallax
-        image={require("assets/img/bg4.jpg").default}
+        image={require("assets/img/product3.jpg").default}
         className={classes.parallax}
       >
         <div className={classes.container}>
@@ -56,11 +56,8 @@ export default function PresentationPage() {
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  Material Kit React
-                  <span className={classes.proBadge}>PRO</span>
                 </h1>
                 <h3 className={classes.title}>
-                  A Badass Material-UI Kit based on Material Design.
                 </h3>
               </div>
             </GridItem>
@@ -69,13 +66,7 @@ export default function PresentationPage() {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription />
-        <SectionComponents />
-        <SectionCards />
-        <SectionContent />
-        <SectionSections />
-        <SectionExamples />
-        <SectionFreeDemo />
-        <SectionOverview />
+      
       </div>
       <SectionPricing />
       <Footer
