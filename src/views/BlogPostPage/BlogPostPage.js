@@ -29,16 +29,6 @@ import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostP
 const useStyles = makeStyles(blogPostPageStyle);
 
 export default function BlogPostPage() {
-  const canvasEl = useRef(null);
- 
-  const [loading, numPages] = usePdf({
-    file: {file},
-    canvasEl
-  });
- 
-  useEffect(() => {
-    setPages(numPages);
-  }, [numPages]);
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -79,7 +69,10 @@ export default function BlogPostPage() {
         </div>
       </Parallax>
       <div className={classes.main}>
-      <canvas ref={canvasEl} />
+
+
+        
+
         <div className={classes.container}>
           <SectionText />
           <SectionBlogInfo />
