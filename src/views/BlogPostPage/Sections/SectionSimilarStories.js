@@ -12,10 +12,16 @@ import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
 import Success from "components/Typography/Success.js";
 import Danger from "components/Typography/Danger.js";
+import Warning from "components/Typography/Warning.js";
+import Primary from "components/Typography/Primary.js";
+import Muted from "components/Typography/Muted.js";
 
-import blog6 from "assets/img/examples/blog6.jpg";
-import blog8 from "assets/img/examples/blog8.jpg";
-import blog7 from "assets/img/examples/blog7.jpg";
+import blog6 from "assets/img/solafide.png";
+import blog8 from "assets/img/dc7notes.png";
+import blog7 from "assets/img/presto.png";
+import blog1 from "assets/img/vanlife.png";
+import blog2 from "assets/img/music.jpeg";
+import blog3 from "assets/img/dj.png";
 
 import sectionSimilarStoriesStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionSimilarStoriesStyle.js";
 
@@ -29,14 +35,14 @@ export default function SectionSimilarStories() {
         <GridContainer>
           <GridItem md={12}>
             <h2 className={classes.title + " " + classes.textCenter}>
-              Similar Stories
+              PORTFOLIO WEBSITES
             </h2>
             <br />
             <GridContainer>
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="#pablo">
+                    <a href="https://solafide-services.com">
                       <img src={blog6} alt="..." />
                     </a>
                     <div
@@ -49,19 +55,16 @@ export default function SectionSimilarStories() {
                   </CardHeader>
                   <CardBody>
                     <Info>
-                      <h6>ENTERPRISE</h6>
+                      <h6>SOLAFIDE-SERVICES</h6>
                     </Info>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                        Autodesk looks to future of 3D printing with Project
-                        Escher
+                      <a href="https://solafide-services.com">
+                        www.solafide-services.com
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Like so many organizations these days, Autodesk is a
-                      company in transition. It was until recently a traditional
-                      boxed software company selling licenses.
-                      <a href="#pablo"> Read More </a>
+                      This website is built with a React.js and serves as
+                      referral hub for Tampa Bay company.
                     </p>
                   </CardBody>
                 </Card>
@@ -69,7 +72,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="#pablo">
+                    <a href="https://dc7-notes.netlify.app">
                       <img src={blog8} alt="..." />
                     </a>
                     <div
@@ -82,18 +85,16 @@ export default function SectionSimilarStories() {
                   </CardHeader>
                   <CardBody>
                     <Success>
-                      <h6>STARTUPS</h6>
+                      <h6>DC7-NOTES</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                        Lyft launching cross-platform service this week
+                      <a href="https://dc7-notes.netlify.app">
+                        dc7-notes.netlify.app
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Like so many organizations these days, Autodesk is a
-                      company in transition. It was until recently a traditional
-                      boxed software company selling licenses.
-                      <a href="#pablo"> Read More </a>
+                      Simple web app built using AWS that allows authentication
+                      and stores user notes.
                     </p>
                   </CardBody>
                 </Card>
@@ -101,7 +102,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="#pablo">
+                    <a href="https://dc7project.xyz">
                       <img src={blog7} alt="..." />
                     </a>
                     <div
@@ -115,19 +116,103 @@ export default function SectionSimilarStories() {
                   <CardBody>
                     <Danger>
                       <h6>
-                        <TrendingUp /> ENTERPRISE
+                        <TrendingUp /> PRESTO.IT
                       </h6>
                     </Danger>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                        6 insights into the French Fashion landscape
+                      <a href="https://dc7project.xyz">dc7project.xyz</a>
+                    </h4>
+                    <p className={classes.description}>
+                      Classifieds website built with Laravel -- functions in
+                      three languages.
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
+            </GridContainer>
+            <GridContainer>
+              <GridItem xs={12} sm={4} md={4}>
+                <Card blog>
+                  <CardHeader image>
+                    <a href="https://myvanmyworld.netlify.app">
+                      <img src={blog1} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + blog6 + ")",
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Warning>
+                      <h6>My Van My World</h6>
+                    </Warning>
+                    <h4 className={classes.cardTitle}>
+                      <a href="https://myvanmyworld.netlify.app">
+                        myvanmyworld.netlify.app
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Like so many organizations these days, Autodesk is a
-                      company in transition. It was until recently a traditional
-                      boxed software company selling licenses.
-                      <a href="#pablo"> Read More </a>
+                      This website is built with a React.js and serves as
+                      referral hub for a couple that remodels vans into living
+                      spaces.
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
+              <GridItem xs={12} sm={4} md={4}>
+                <Card blog>
+                  <CardHeader image>
+                    <a href="#pablo">
+                      <img src={blog2} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + blog8 + ")",
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Primary>
+                      <h6>Music Player</h6>
+                    </Primary>
+                    <h4 className={classes.cardTitle}>
+                      <a href="#pablo">dc7music.xyz</a>
+                    </h4>
+                    <p className={classes.description}>
+                      Web app built using VUE and TailwindCC
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
+              <GridItem xs={12} sm={4} md={4}>
+                <Card blog>
+                  <CardHeader image>
+                    <a href="https://dc-dj.netlify.app">
+                      <img src={blog3} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + blog7 + ")",
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Muted>
+                      <h6>Template Project</h6>
+                    </Muted>
+                    <h4 className={classes.cardTitle}>
+                      <a href="https://dc-dj.netlify.app">dc-dj.netlify.app</a>
+                    </h4>
+                    <p className={classes.description}>
+                      Sample showing authentication, storage, and page structure
+                      for simple projects
                     </p>
                   </CardBody>
                 </Card>

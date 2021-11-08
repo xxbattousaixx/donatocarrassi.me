@@ -40,29 +40,28 @@ export default function BlogPostPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand="DC7"
+        links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 300,
-          color: "info",
+          height: 400,
+          color: "rose",
         }}
       />
-      <Parallax image={require("assets/img/bg5.jpg").default} filter="dark">
+      <Parallax image={require("assets/img/bg2.jpg").default} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
               <h1 className={classes.title}>
-                How We Built the Most Successful Castle Ever
+                Donato Carrassi
               </h1>
               <h4 className={classes.subtitle}>
-                The last 48 hours of my life were total madness. This is what I
-                did.
+               Web & App Developer
               </h4>
               <br />
               <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Article
+                <FormatAlignLeft /> WELCOME
               </Button>
             </GridItem>
           </GridContainer>
@@ -71,12 +70,10 @@ export default function BlogPostPage() {
       <div className={classes.main}>
 
 
-        
+
 
         <div className={classes.container}>
-          <SectionText />
-          <SectionBlogInfo />
-          <SectionComments />
+          
         </div>
       </div>
       <SectionSimilarStories />
@@ -84,7 +81,18 @@ export default function BlogPostPage() {
         content={
           <div>
             <div className={classes.left}>
-            
+              <List className={classes.list}>
+                <ListItem className={classes.inlineBlock}>
+                  <a
+                    href="https://www.donatocarrassi.me"
+                    target="_blank"
+                    className={classes.block}
+                  >
+                    DC7 -- Donato Carrassi
+                  </a>
+                </ListItem>
+                
+              </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
@@ -93,6 +101,7 @@ export default function BlogPostPage() {
                 href="https://www.donatocarrassi.me"
                 target="_blank"
               >
+                DC7
               </a>{" "}
             </div>
           </div>

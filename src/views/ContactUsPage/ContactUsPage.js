@@ -28,11 +28,11 @@ const CustomSkinMap = () => {
   React.useEffect(() => {
     let google = window.google;
     let map = mapRef.current;
-    let lat = "44.43353";
-    let lng = "26.093928";
+    let lat = "27.9772";
+    let lng = "-82.5311";
     const myLatlng = new google.maps.LatLng(lat, lng);
     const mapOptions = {
-      zoom: 14,
+      zoom: 10,
       center: myLatlng,
       scrollwheel: false,
       zoomControl: true,
@@ -100,12 +100,12 @@ const CustomSkinMap = () => {
       position: myLatlng,
       map: map,
       animation: google.maps.Animation.DROP,
-      title: "Material Kit PRO React!",
+      title: "DC7",
     });
 
     const contentString =
-      '<div class="info-window-content"><h2>Material Kit PRO React</h2>' +
-      "<p>A premium Kit for React, Material-UI, and React Hooks.</p></div>";
+      '<div class="info-window-content"><h2>Donato Carrassi</h2>' +
+      "<p>Developer</p></div>";
 
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
@@ -136,10 +136,10 @@ export default function ContactUsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="dark" />}
+        brand="DC7"
+        links={<HeaderLinks dropdownHoverColor="primary" />}
         fixed
-        color="dark"
+        color="primary"
       />
       <div className={classes.bigMap}>
         <CustomSkinMap />
@@ -147,12 +147,11 @@ export default function ContactUsPage() {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.contactContent}>
           <div className={classes.container}>
-            <h2 className={classes.title}>Send us a message</h2>
+            <h2 className={classes.title}>Send a message</h2>
             <GridContainer>
               <GridItem md={6} sm={6}>
                 <p>
-                  You can contact us with anything related to our Products. We
-                  {"'"}ll get in touch with you as soon as possible.
+                  Send your inquiries my way.<br/> I{"'"}ll get in touch with you as soon as possible.
                   <br />
                   <br />
                 </p>
@@ -191,7 +190,7 @@ export default function ContactUsPage() {
                   />
                   <div className={classes.textCenter}>
                     <Button color="primary" round>
-                      Contact us
+                      Contact me
                     </Button>
                   </div>
                 </form>
@@ -199,11 +198,10 @@ export default function ContactUsPage() {
               <GridItem md={4} sm={4} className={classes.mlAuto}>
                 <InfoArea
                   className={classes.info}
-                  title="Find us at the office"
+                  title="Find me online"
                   description={
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                      <br /> Romania
+                      dcarrassi@outlook.com <br /> Tampa Bay, Florida
                     </p>
                   }
                   icon={PinDrop}
@@ -211,28 +209,17 @@ export default function ContactUsPage() {
                 />
                 <InfoArea
                   className={classes.info}
-                  title="Give us a ring"
+                  title="Give me a ring/text"
                   description={
                     <p>
-                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
-                      8:00-22:00
+                      Donato Carrassi <br /> +1 251 237 1222 <br /> Mon - Fri,
+                      18:00-22:00
                     </p>
                   }
                   icon={Phone}
                   iconColor="primary"
                 />
-                <InfoArea
-                  className={classes.info}
-                  title="Legal Information"
-                  description={
-                    <p>
-                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                      EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
-                    </p>
-                  }
-                  icon={BusinessCenter}
-                  iconColor="primary"
-                />
+                
               </GridItem>
             </GridContainer>
           </div>
@@ -249,7 +236,7 @@ export default function ContactUsPage() {
                     target="_blank"
                     className={classes.block}
                   >
-                    DC7
+                    DC7 -- Donato Carrassi
                   </a>
                 </ListItem>
                 

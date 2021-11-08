@@ -35,27 +35,23 @@ export default function LandingPage({ ...rest }) {
   const classes = useStyles();
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+       <Header
+        brand="DC7 -- Donato Carrassi"
+        links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
+        color="transparent"
         changeColorOnScroll={{
-          height: 300,
-          color: "info",
+          height: 400,
+          color: "dark",
         }}
-        {...rest}
       />
       <Parallax image={require("assets/img/bg8.jpg").default} filter="dark">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Donato Carrassi</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              Web & App Developer
               </h4>
               <br />
               <Button

@@ -14,6 +14,8 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
+import Favorite from "@material-ui/icons/Favorite";
+
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
@@ -38,17 +40,17 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="Donato Carrassi"
+        brand="DC7"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
-        color="transparent"
+        color="dark"
         changeColorOnScroll={{
           height: 400,
           color: "info",
         }}
       />
       <Parallax
-        image={require("assets/img/product3.jpg").default}
+        image={require("assets/img/examples/card-project4.jpg").default}
         className={classes.parallax}
       >
         <div className={classes.container}>
@@ -68,96 +70,36 @@ export default function PresentationPage() {
         <SectionDescription />
       
       </div>
-      <SectionPricing />
       <Footer
-        theme="white"
         content={
           <div>
             <div className={classes.left}>
-              <a
-                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-presentation"
-                target="_blank"
-                className={classes.footerBrand}
-              >
-                Material Kit PRO React
-              </a>
-            </div>
-            <div className={classes.pullCenter}>
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-presentation"
+                    href="https://www.donatocarrassi.me"
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    DC7 -- Donato Carrassi
                   </a>
                 </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
+                
               </List>
             </div>
-            <div className={classes.rightLinks}>
-              <ul>
-                <li>
-                  <Button
-                    href="https://twitter.com/CreativeTim?ref=creativetim"
-                    target="_blank"
-                    color="twitter"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="https://dribbble.com/creativetim?ref=creativetim"
-                    target="_blank"
-                    color="dribbble"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="https://instagram.com/CreativeTimOfficial?ref=creativetim"
-                    target="_blank"
-                    color="instagram"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-instagram" />
-                  </Button>
-                </li>
-              </ul>
+            <div className={classes.right}>
+              &copy; {1900 + new Date().getYear()} , made with{" "}
+              <Favorite className={classes.icon} /> by{" "}
+              <a
+                href="https://www.donatocarrassi.me"
+                target="_blank"
+              >
+                DC7
+              </a>{" "}
             </div>
           </div>
         }
-      />
-    </div>
+      />      
+          </div>
   );
 }
