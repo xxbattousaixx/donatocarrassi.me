@@ -33,7 +33,7 @@ export default function SectionDescription() {
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="Web Design"
-                description="Create websites with a range of functionalities. Comfortable with cloud services and have experience working with APIs. Laravel, React.js & Vue.js experience. "
+                description="Create websites with a range of functionalities. Design to your specification utlizing all new technologies. Available for support, maintenance, and upgrades to all services. Work from scratch or starting with a template specific to your needs -- once you have selected your starting point and basic requirements you will watch your site take shape. Comfortable with cloud services and have experience working with APIs. Laravel, React.js & Vue.js experience. "
                 icon={Apps}
                 iconColor="danger"
                 vertical={true}
@@ -42,7 +42,7 @@ export default function SectionDescription() {
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="App Development"
-                description="Release a marketplace application for web or mobile platform. Full stack development capacity. React Native experience."
+                description="Release a marketplace application for web or mobile platform. Visually impressive designs and UI/UX for different practical needs. Scalable architecture for growing enterprises for highly sustainable operations. Full stack development capacity. Most proficient with React Native, able to keep user up-to-date with their application on their own device."
                 icon={ViewDay}
                 iconColor="primary"
                 vertical={true}
@@ -51,7 +51,7 @@ export default function SectionDescription() {
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="IT technical support"
-                description="Solving technology problems daily. CompTIA certified with A+, Network+, Security+, Cloud+"
+                description="Solving technology problems daily. From consultation to on-site services. Remote capabilities. CompTIA certified with A+, Network+, Security+, Cloud+"
                 icon={ViewCarousel}
                 iconColor="success"
                 vertical={true}
