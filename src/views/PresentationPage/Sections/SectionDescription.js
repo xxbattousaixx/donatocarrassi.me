@@ -51,7 +51,7 @@ export default function SectionDescription() {
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="IT technical support"
-                description="Solving technology problems daily. From consultation to on-site services. Remote capabilities. CompTIA certified with A+, Network+, Security+, Cloud+"
+                description="Solving technology problems daily. Services from consultation to on-site services. Remote capabilities. CompTIA certified with A+, Network+, Security+, Cloud+"
                 icon={ViewCarousel}
                 iconColor="success"
                 vertical={true}

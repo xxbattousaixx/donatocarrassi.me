@@ -1,6 +1,6 @@
 {
-  "name": "material-kit-pro-react",
-  "version": "1.10.0",
+  "name": "dc7",
+  "version": "1.00.7",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.11.4",

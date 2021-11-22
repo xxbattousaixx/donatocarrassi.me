@@ -155,10 +155,13 @@ export default function ContactUsPage() {
                   <br />
                   <br />
                 </p>
-                <form>
+                <form action="https://postmail.invotes.com/send"
+    method="post" id="email_form">
                   <CustomInput
                     labelText="Your Name"
                     id="float"
+                    type="text"
+                    name="subject"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -166,6 +169,8 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Email address"
                     id="float"
+                    type="text" 
+                    name="extra_email"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -173,6 +178,8 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Phone"
                     id="float"
+                    type="text" 
+                    name="extra_phone"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -180,6 +187,8 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Your message"
                     id="float"
+                    type="text" 
+                    name="extra_msg"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -188,10 +197,11 @@ export default function ContactUsPage() {
                       rows: 6,
                     }}
                   />
+                    <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
+                  <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                   <div className={classes.textCenter}>
-                    <Button color="primary" round>
-                      Contact me
-                    </Button>
+                  <input id="submit_form" type="submit" value="Send" />
                   </div>
                 </form>
               </GridItem>
