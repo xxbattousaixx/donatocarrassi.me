@@ -151,17 +151,17 @@ export default function ContactUsPage() {
             <GridContainer>
               <GridItem md={6} sm={6}>
                 <p>
-                  Send your inquiries my way.<br/> I{"'"}ll get in touch with you as soon as possible.
+                  Send your inquiries my way.
+                  <br/>
+                  <br/>
+                   I{"'"}ll get in touch with you as soon as possible.
                   <br />
                   <br />
                 </p>
-                <form action="https://postmail.invotes.com/send"
-    method="post" id="email_form">
+                <form>
                   <CustomInput
                     labelText="Your Name"
                     id="float"
-                    type="text"
-                    name="subject"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -169,8 +169,6 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Email address"
                     id="float"
-                    type="text" 
-                    name="extra_email"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -178,8 +176,6 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Phone"
                     id="float"
-                    type="text" 
-                    name="extra_phone"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -187,8 +183,6 @@ export default function ContactUsPage() {
                   <CustomInput
                     labelText="Your message"
                     id="float"
-                    type="text" 
-                    name="extra_msg"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -197,11 +191,10 @@ export default function ContactUsPage() {
                       rows: 6,
                     }}
                   />
-                    <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
-                  <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                   <div className={classes.textCenter}>
-                  <input id="submit_form" type="submit" value="Send" />
+                    <Button color="primary" round>
+                      Contact me
+                    </Button>
                   </div>
                 </form>
               </GridItem>
