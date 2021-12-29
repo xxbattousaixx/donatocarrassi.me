@@ -1,8 +1,9 @@
+/* eslint-disable prettier/prettier */
+
 import React from "react";
 import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
-
+require("path")
 import "assets/scss/material-kit-pro-react.scss?v=1.10.0";
 
 // pages for this product
@@ -22,11 +23,9 @@ import SectionsPage from "views/SectionsPage/SectionsPage.js";
 import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
-
-var hist = createBrowserHistory();
-
+// import "main.scss";
 ReactDOM.render(
-  <Router history={hist}>
+  <Router>
     <Switch>
       <Route path="/about-us" component={AboutUsPage} />
       <Route path="/blog-post" component={BlogPostPage} />

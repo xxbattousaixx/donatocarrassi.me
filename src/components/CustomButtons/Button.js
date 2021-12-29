@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -28,6 +29,7 @@ const RegularButton = React.forwardRef((props, ref) => {
     className,
     ...rest
   } = props;
+  RegularButton.displayName='Button1';
   const classes = useStyles();
   const btnClasses = classNames({
     [classes.button]: true,

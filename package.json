@@ -1,8 +1,9 @@
 {
-  "name": "dc7",
-  "version": "1.00.7",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.16.5",
     "@material-ui/core": "4.11.4",
     "@material-ui/icons": "4.11.2",
     "animate.css": "4.1.1",
@@ -16,15 +17,18 @@
     "react-datetime": "3.0.4",
     "react-dom": "17.0.2",
     "react-image-gallery": "1.0.9",
-    "react-pdf-js": "^5.1.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
     "react-slick": "0.28.1",
-    "react-tagsinput": "3.19.0"
+    "react-tagsinput": "3.19.0",
+    "resolve-url-loader": "^4.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "3.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "webpack --mode=production --node-env=production",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
@@ -32,11 +36,23 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css",
     "minify-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
+    "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "@webpack-cli/generators": "^2.4.1",
+    "babel-loader": "8.1.0",
+    "css-loader": "^6.5.1",
     "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9"
+    "gulp-append-prepend": "1.0.9",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1"
   },
   "optionalDependencies": {
     "@babel/core": "7.14.0",
@@ -53,5 +69,6 @@
       "not op_mini all"
     ],
     "development": []
-  }
+  },
+  "description": "My webpack project"
 }
