@@ -161,28 +161,24 @@ export default function ContactUsPage() {
                 <form>
                   <CustomInput
                     labelText="Your Name"
-                    id="float"
                     formControlProps={{
                       fullWidth: true,
                     }}
                   />
                   <CustomInput
                     labelText="Email address"
-                    id="float"
                     formControlProps={{
                       fullWidth: true,
                     }}
                   />
                   <CustomInput
                     labelText="Phone"
-                    id="float"
                     formControlProps={{
                       fullWidth: true,
                     }}
                   />
                   <CustomInput
                     labelText="Your message"
-                    id="float"
                     formControlProps={{
                       fullWidth: true,
                     }}

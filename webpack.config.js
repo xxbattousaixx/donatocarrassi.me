@@ -4,24 +4,23 @@
 const path = require("path");
 
 const isProduction = process.env.NODE_ENV == "production";
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const stylesHandler = "style-loader";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const config = {
-  entry: "./src/index.js",
+  entry: path.resolve(__dirname, 'src/') + '/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
   },
-  resolve:{extensions:['.js','.jsx']},
+  resolve:{
+    modules: ['node_modules'],
+      extensions:['.js','.jsx']},
   devServer: {
     open: true,
     host: "localhost",
   },
   plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: "index.html",
-  //   }),
+    
     new MiniCssExtractPlugin({
 			filename: "[name].css",
 			chunkFilename: "[id].css"
@@ -30,15 +29,31 @@ const config = {
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
+    
     rules: [
       {
         test:/\.js$/,
-        use:'babel-loader',
-        },
+        use: [
+          {
+        loader:'babel-loader',
+        query: {
+          cacheDirectory: true,
+          presets: ['env', 'react','es2015']
+        }
+      },
+    ],        
+  },
         {
             test:/\.jsx$/,
-            use:'babel-loader',
-        },
+            use: [
+              {
+            loader:'babel-loader',
+            query: {
+              cacheDirectory: true,
+              presets: ['env', 'react','es2015']
+            }
+          },
+        ],       },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [

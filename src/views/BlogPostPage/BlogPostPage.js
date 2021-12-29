@@ -45,18 +45,20 @@ export default function BlogPostPage() {
       <Parallax image={require("assets/img/bg2.jpg").default} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
-            
             <GridItem sm={11} md={11} lg={11} className={classes.textCenter}>
-              <h2 className={classes.title}>
+              <h3 className={classes.title}>
                 Donato Carrassi
-              </h2>
-              
-              <h4 className={classes.subtitle}>
+              </h3>
+          <br/>
+          <br/>
+
+              <h5 className={classes.subtitle}>
                Web & App Development
-              </h4>
+              </h5>
             </GridItem>
-            <br/>
 <GridItem sm={10} md={10} lg={10} className={classes.textCenter}>
+<br/>
+
   <ButtonS/>
 </GridItem>
 
@@ -65,6 +67,11 @@ export default function BlogPostPage() {
           </GridContainer>
 
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <br/>

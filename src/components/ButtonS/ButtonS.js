@@ -8,8 +8,8 @@ import "./DemoBlock.css";
 import PropTypes from "prop-types";
 import Button from "components/CustomButtons/Button.js";
 import ParticleEffectButton from "react-particle-effect-button";
-import { Text,  } from '@react-pdf/renderer';
-import { Document, Page,View,StyleSheet } from 'react-pdf/dist/esm/entry.webpack';
+import { Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import ReactDOM from 'react-dom';
 import axios from "axios";
 import samplePDF from '../../assets/img/DAC2021CV.pdf';
@@ -58,7 +58,7 @@ export default class ButtonS extends Component {
     const { hidden, animating, resume } = this.state;
 
     return (<>
-     
+
 <div className='container fluid'>
       <div className="buttons-div-container">
 
