@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -20,7 +21,7 @@ import blog6 from "assets/img/solafide.png";
 import blog8 from "assets/img/dc7notes.png";
 import blog7 from "assets/img/presto.png";
 import blog1 from "assets/img/vanlife.png";
-import blog2 from "assets/img/music.jpeg";
+import blog2 from "assets/img/reclique.png";
 import blog3 from "assets/img/dj.png";
 
 import sectionSimilarStoriesStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionSimilarStoriesStyle.js";
@@ -59,7 +60,7 @@ export default function SectionSimilarStories() {
                     </Info>
                     <h4 className={classes.cardTitle}>
                       <a href="https://solafide-services.com">
-                        www.solafide-services.com
+                        solafide-services.com
                       </a>
                     </h4>
                     <p className={classes.description}>
@@ -89,7 +90,7 @@ export default function SectionSimilarStories() {
                     </Success>
                     <h4 className={classes.cardTitle}>
                       <a href="https://dc7-notes.netlify.app">
-                        dc7-notes.netlify.app
+                        dc7-notes
                       </a>
                     </h4>
                     <p className={classes.description}>
@@ -151,7 +152,7 @@ export default function SectionSimilarStories() {
                     </Warning>
                     <h4 className={classes.cardTitle}>
                       <a href="https://myvanmyworld.netlify.app">
-                        myvanmyworld.netlify.app
+                        myvanmyworld
                       </a>
                     </h4>
                     <p className={classes.description}>
@@ -165,7 +166,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="#pablo">
+                    <a href="https://dc7-test.netlify.app">
                       <img src={blog2} alt="..." />
                     </a>
                     <div
@@ -178,14 +179,14 @@ export default function SectionSimilarStories() {
                   </CardHeader>
                   <CardBody>
                     <Primary>
-                      <h6>Music Player</h6>
+                      <h6>Testing Assignment</h6>
                     </Primary>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">dc7music.xyz</a>
+                      <a href="https://dc7-test.netlify.app">dc7-test</a>
                     </h4>
                     <p className={classes.description}>
-                      Web app built using VUE and TailwindCC
-                    </p>
+                      {/* Web app built using VUE and TailwindCC */}
+                      Web app built using React that allows for a user to take an accounting assesment. The questions are hosted elsewhere in JSON format, and the app cross-references your input to possible answers.                    </p>
                   </CardBody>
                 </Card>
               </GridItem>
@@ -208,7 +209,7 @@ export default function SectionSimilarStories() {
                       <h6>Template Project</h6>
                     </Muted>
                     <h4 className={classes.cardTitle}>
-                      <a href="https://dc-dj.netlify.app">dc-dj.netlify.app</a>
+                      <a href="https://dc-dj.netlify.app">dc-dj</a>
                     </h4>
                     <p className={classes.description}>
                       Sample showing authentication, storage, and page structure

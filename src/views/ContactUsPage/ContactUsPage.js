@@ -211,7 +211,7 @@ export default function ContactUsPage() {
                   title="Give me a ring/text"
                   description={
                     <p>
-                      Donato Carrassi <br /> +1 251 237 1222 <br /> Mon - Fri,
+                      Donato Carrassi <br /> +1 813 336 2514 <br /> Mon - Fri,
                       18:00-22:00
                     </p>
                   }

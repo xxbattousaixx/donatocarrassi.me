@@ -36,7 +36,7 @@ export default function SectionDescription() {
             <GridItem md={4} sm={4}>
               <InfoArea
                 title="Web Design"
-                description="Create websites with a range of functionalities. Design to your specification utlizing all new technologies and bring it to life. Available for support, maintenance, and upgrades to all services. Work from scratch or starting with a template specific to your needs -- once you have selected your starting point and basic requirements you will watch your site take shape."
+                description="Create websites with a range of functionalities. Designed to your specification, utilizing all new technologies that bring it to life. Work from scratch or starting with a template specific to your needs -- once you have selected your starting point and basic requirements you will watch your site take shape."
                 icon={Apps}
                 iconColor="danger"
                 vertical={true}
