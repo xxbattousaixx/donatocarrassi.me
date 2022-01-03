@@ -14,9 +14,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import PropTypes from 'prop-types';
 
 import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
-import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
+import blogPostPageStyle from "../../assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
 

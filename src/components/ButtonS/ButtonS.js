@@ -10,8 +10,6 @@ import Button from "components/CustomButtons/Button.js";
 import ParticleEffectButton from "react-particle-effect-button";
 import { Text, View, StyleSheet } from '@react-pdf/renderer';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import ReactDOM from 'react-dom';
-import axios from "axios";
 import samplePDF from '../../assets/img/DAC2021CV.pdf';
 import FormatAlignLeft from '@material-ui/icons/FormatAlignLeft';
 // Create styles

@@ -19,7 +19,7 @@ import Favorite from "@material-ui/icons/Favorite";
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 
-import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
+import presentationStyle from "../../assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
 const useStyles = makeStyles(presentationStyle);
 

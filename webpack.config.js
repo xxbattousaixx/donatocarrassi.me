@@ -7,14 +7,21 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = "style-loader";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const config = {
   entry: path.resolve(__dirname, 'src/') + '/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
   },
-  resolve:{
-    modules: ['node_modules'],
-      extensions:['.js','.jsx']},
+  resolve: {
+    modules: [path.resolve(__dirname,'src'),'node_modules'],
+    fallback: {
+      "stream": false,
+      "zlib": false,
+      "buffer": false
+    },
+    extensions: ['.js', '.jsx']
+},
   devServer: {
     open: true,
     host: "localhost",
@@ -36,9 +43,9 @@ const config = {
         use: [
           {
         loader:'babel-loader',
-        query: {
+        options: {
           cacheDirectory: true,
-          presets: ['env', 'react','es2015']
+          presets: ['@babel/env', '@babel/react']
         }
       },
     ],        
@@ -47,13 +54,14 @@ const config = {
             test:/\.jsx$/,
             use: [
               {
-            loader:'babel-loader',
-            query: {
-              cacheDirectory: true,
-              presets: ['env', 'react','es2015']
-            }
+                loader: 'babel-loader',
+                options: {
+                  cacheDirectory: true,
+                  presets: ['@babel/react', '@babel/env']
+                }
+              },
+            ],        
           },
-        ],       },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
@@ -70,15 +78,12 @@ const config = {
         use: [stylesHandler, "css-loader"],
       },
       {
-        test: /\.scss$/,
+       test: /\.s[ca]ss/i,
 				use: [stylesHandler,
 					MiniCssExtractPlugin.loader,
 					{
 						loader: "css-loader",
-						options: {
-							minimize: true,
-							sourceMap: true
-						}
+				
 					},
 					{
 						loader: "sass-loader"
