@@ -42,14 +42,8 @@ export default function CustomFileInput(props) {
       props.onChange(files, fileNames);
     }
   };
-  const {
-    id,
-    endButton,
-    startButton,
-    inputProps,
-    formControlProps,
-    multiple,
-  } = props;
+  const { id, endButton, startButton, inputProps, formControlProps, multiple } =
+    props;
   const classes = useStyles();
   if (inputProps && inputProps.type && inputProps.type === "file") {
     inputProps.type = "text";

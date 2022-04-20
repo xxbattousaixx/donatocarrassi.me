@@ -19,7 +19,7 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
-import {Form} from "reactstrap";
+import { Form } from "reactstrap";
 import contactUsStyle from "../../assets/jss/material-kit-pro-react/views/contactUsStyle.js";
 
 const CustomSkinMap = () => {
@@ -151,14 +151,16 @@ export default function ContactUsPage() {
               <GridItem md={6} sm={6}>
                 <p>
                   Send your inquiries my way.
-                  <br/>
-                  <br/>
-                   I{"'"}ll get in touch with you as soon as possible.
+                  <br />
+                  <br />I{"'"}ll get in touch with you as soon as possible.
                   <br />
                   <br />
                 </p>
-                <Form action="https://postmail.invotes.com/send"
-    method="post" id="email_form">
+                <Form
+                  action="https://postmail.invotes.com/send"
+                  method="post"
+                  id="email_form"
+                >
                   <CustomInput
                     labelText="Your Name"
                     name="subject"
@@ -192,13 +194,30 @@ export default function ContactUsPage() {
                     }}
                   />
                   <div className={classes.textCenter}>
+                    <input
+                      type="hidden"
+                      name="access_token"
+                      value="63yiwt3vt3p7kwh8m7zcdmd0"
+                    />
 
-                  <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
-  
-    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-   
-                    <Button id="submit_form" type="submit" value="Send" color="primary" round>
+                    <input
+                      type="hidden"
+                      name="success_url"
+                      value=".?message=Email+Successfully+Sent%21&isError=0"
+                    />
+                    <input
+                      type="hidden"
+                      name="error_url"
+                      value=".?message=Email+could+not+be+sent.&isError=1"
+                    />
+
+                    <Button
+                      id="submit_form"
+                      type="submit"
+                      value="Send"
+                      color="primary"
+                      round
+                    >
                       Contact me
                     </Button>
                   </div>
@@ -228,7 +247,6 @@ export default function ContactUsPage() {
                   icon={Phone}
                   iconColor="primary"
                 />
-                
               </GridItem>
             </GridContainer>
           </div>
@@ -248,16 +266,12 @@ export default function ContactUsPage() {
                     DC7 -- Donato Carrassi
                   </a>
                 </ListItem>
-                
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.donatocarrassi.me"
-                target="_blank"
-              >
+              <a href="https://www.donatocarrassi.me" target="_blank">
                 DC7
               </a>{" "}
             </div>

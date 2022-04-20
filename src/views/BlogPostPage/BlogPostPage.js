@@ -1,8 +1,8 @@
-/*eslint-disable*/ 
+/*eslint-disable*/
 
-import React, { useState, useEffect, useRef } from 'react';
-import {makeStyles} from "@material-ui/core/styles";
-import ButtonS from "components/ButtonS/ButtonS.js"
+import React, { useState, useEffect, useRef } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import ButtonS from "components/ButtonS/ButtonS.js";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
@@ -14,7 +14,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 import blogPostPageStyle from "../../assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
@@ -22,7 +22,6 @@ import blogPostPageStyle from "../../assets/jss/material-kit-pro-react/views/blo
 const useStyles = makeStyles(blogPostPageStyle);
 
 export default function BlogPostPage() {
-
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -30,7 +29,7 @@ export default function BlogPostPage() {
   const classes = useStyles();
   const [page, setPage] = useState(1);
   const [pages, setPages] = useState(null);
-  
+
   return (
     <div>
       <Header
@@ -47,47 +46,31 @@ export default function BlogPostPage() {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem sm={11} md={11} lg={11} className={classes.textCenter}>
-              <h3 className={classes.title}>
-                Donato Carrassi
-              </h3>
-          <br/>
-          <br/>
+              <h3 className={classes.title}>Donato Carrassi</h3>
+              <br />
+              <br />
 
-              <h5 className={classes.subtitle}>
-               Web & App Development
-              </h5>
+              <h5 className={classes.subtitle}>Web & App Development</h5>
             </GridItem>
-<GridItem sm={10} md={10} lg={10} className={classes.textCenter}>
-<br/>
+            <GridItem sm={10} md={10} lg={10} className={classes.textCenter}>
+              <br />
 
-  <ButtonS/>
-</GridItem>
-
-
-       
+              <ButtonS />
+            </GridItem>
           </GridContainer>
-
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </Parallax>
 
-
       <div className={classes.main}>
-
-
-
-
-        <div className={classes.container}>
-          
-        </div>
+        <div className={classes.container}></div>
       </div>
       <SectionSimilarStories />
       <Footer
@@ -104,16 +87,12 @@ export default function BlogPostPage() {
                     DC7 -- Donato Carrassi
                   </a>
                 </ListItem>
-                
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.donatocarrassi.me"
-                target="_blank"
-              >
+              <a href="https://www.donatocarrassi.me" target="_blank">
                 DC7
               </a>{" "}
             </div>

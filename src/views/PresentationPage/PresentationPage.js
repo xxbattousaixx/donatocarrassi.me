@@ -49,10 +49,8 @@ export default function PresentationPage() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1>
-                </h1>
-                <h3 className={classes.title}>
-                </h3>
+                <h1></h1>
+                <h3 className={classes.title}></h3>
               </div>
             </GridItem>
           </GridContainer>
@@ -60,7 +58,6 @@ export default function PresentationPage() {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription />
-      
       </div>
       <Footer
         content={
@@ -76,22 +73,18 @@ export default function PresentationPage() {
                     DC7 -- Donato Carrassi
                   </a>
                 </ListItem>
-                
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.donatocarrassi.me"
-                target="_blank"
-              >
+              <a href="https://www.donatocarrassi.me" target="_blank">
                 DC7
               </a>{" "}
             </div>
           </div>
         }
-      />      
-          </div>
+      />
+    </div>
   );
 }

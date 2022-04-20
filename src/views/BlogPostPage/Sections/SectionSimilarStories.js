@@ -89,9 +89,7 @@ export default function SectionSimilarStories() {
                       <h6>DC7-NOTES</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href="https://dc7-notes.netlify.app">
-                        dc7-notes
-                      </a>
+                      <a href="https://dc7-notes.netlify.app">dc7-notes</a>
                     </h4>
                     <p className={classes.description}>
                       Simple web app built using AWS that allows authentication
@@ -186,7 +184,11 @@ export default function SectionSimilarStories() {
                     </h4>
                     <p className={classes.description}>
                       {/* Web app built using VUE and TailwindCC */}
-                      Web app built using React that allows for a user to take an accounting assesment. The questions are hosted elsewhere in JSON format, and the app cross-references your input to possible answers.                    </p>
+                      Web app built using React that allows for a user to take
+                      an accounting assesment. The questions are hosted
+                      elsewhere in JSON format, and the app cross-references
+                      your input to possible answers.{" "}
+                    </p>
                   </CardBody>
                 </Card>
               </GridItem>

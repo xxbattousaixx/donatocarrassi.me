@@ -14,15 +14,8 @@ import styles from "assets/jss/material-kit-pro-react/components/cardFooterStyle
 const useStyles = makeStyles(styles);
 
 export default function CardFooter(props) {
-  const {
-    className,
-    children,
-    plain,
-    profile,
-    pricing,
-    testimonial,
-    ...rest
-  } = props;
+  const { className, children, plain, profile, pricing, testimonial, ...rest } =
+    props;
   const classes = useStyles();
   const cardFooterClasses = classNames({
     [classes.cardFooter]: true,

@@ -66,29 +66,30 @@ const productStyle = {
       height: "auto",
       textAlign: "center",
     },
-    "& .image-gallery-thumbnails > .image-gallery-thumbnails-container .image-gallery-thumbnail": {
-      "&.active > .image-gallery-thumbnail-inner": {
-        opacity: "1",
-        borderColor: grayColor[6],
+    "& .image-gallery-thumbnails > .image-gallery-thumbnails-container .image-gallery-thumbnail":
+      {
+        "&.active > .image-gallery-thumbnail-inner": {
+          opacity: "1",
+          borderColor: grayColor[6],
+        },
+        "& > .image-gallery-thumbnail-inner": {
+          width: "80%",
+          maxWidth: "85px",
+          margin: "0 auto",
+          padding: "8px",
+          display: "block",
+          border: "1px solid transparent",
+          background: "transparent",
+          borderRadius: "3px",
+          opacity: ".8",
+        },
+        "& > .image-gallery-thumbnail-inner img": {
+          borderRadius: "3px",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+        },
       },
-      "& > .image-gallery-thumbnail-inner": {
-        width: "80%",
-        maxWidth: "85px",
-        margin: "0 auto",
-        padding: "8px",
-        display: "block",
-        border: "1px solid transparent",
-        background: "transparent",
-        borderRadius: "3px",
-        opacity: ".8",
-      },
-      "& > .image-gallery-thumbnail-inner img": {
-        borderRadius: "3px",
-        width: "100%",
-        height: "auto",
-        textAlign: "center",
-      },
-    },
   },
   titleRow: {
     marginTop: "-8vh",

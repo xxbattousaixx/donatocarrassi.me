@@ -27,7 +27,7 @@ export default function SectionDescription() {
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
               My name is Donato Carrassi and I am a developer --
-              <br /> <i>your</i>  solution is just waiting to be created.
+              <br /> <i>your</i> solution is just waiting to be created.
             </h4>
           </GridItem>
         </GridContainer>

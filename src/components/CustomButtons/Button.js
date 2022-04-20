@@ -29,7 +29,7 @@ const RegularButton = React.forwardRef((props, ref) => {
     className,
     ...rest
   } = props;
-  RegularButton.displayName='Button1';
+  RegularButton.displayName = "Button1";
   const classes = useStyles();
   const btnClasses = classNames({
     [classes.button]: true,

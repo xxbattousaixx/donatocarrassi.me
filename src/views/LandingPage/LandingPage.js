@@ -35,7 +35,7 @@ export default function LandingPage({ ...rest }) {
   const classes = useStyles();
   return (
     <div>
-       <Header
+      <Header
         brand="DC7 -- Donato Carrassi"
         links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
@@ -50,11 +50,8 @@ export default function LandingPage({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>Donato Carrassi</h1>
-              <h4>
-              Web & App Developer
-              </h4>
+              <h4>Web & App Developer</h4>
               <br />
-              
             </GridItem>
           </GridContainer>
         </div>
@@ -80,16 +77,12 @@ export default function LandingPage({ ...rest }) {
                     DC7
                   </a>
                 </ListItem>
-                
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.donatocarrassi.me"
-                target="_blank"
-              >
+              <a href="https://www.donatocarrassi.me" target="_blank">
                 DC7
               </a>{" "}
             </div>

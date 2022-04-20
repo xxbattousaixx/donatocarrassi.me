@@ -43,9 +43,10 @@ const customDropdownStyle = (theme) => ({
     },
   },
   manager: {
-    "& > div > button:first-child > span:first-child, & > div > a:first-child > span:first-child": {
-      width: "100%",
-    },
+    "& > div > button:first-child > span:first-child, & > div > a:first-child > span:first-child":
+      {
+        width: "100%",
+      },
   },
   innerManager: {
     display: "block",
@@ -60,9 +61,10 @@ const customDropdownStyle = (theme) => ({
     },
   },
   target: {
-    "& > button:first-child > span:first-child, & > a:first-child > span:first-child": {
-      display: "inline-block",
-    },
+    "& > button:first-child > span:first-child, & > a:first-child > span:first-child":
+      {
+        display: "inline-block",
+      },
     "& $caret": {
       marginLeft: "0px",
     },
