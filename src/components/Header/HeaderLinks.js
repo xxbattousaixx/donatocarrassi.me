@@ -97,13 +97,13 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/blog-post" className={classes.dropdownLink}>
+        <Link to="/blog-post" target="_blank" className={classes.dropdownLink}>
           <Assignment className={classes.dropdownIcons} />
           Portfolio
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/contact-us" className={classes.dropdownLink}>
+        <Link to="/contact-us" target="_blank" className={classes.dropdownLink}>
           <LocationOn className={classes.dropdownIcons} />
           Contact
         </Link>

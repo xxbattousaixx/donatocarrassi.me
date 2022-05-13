@@ -224,11 +224,57 @@ export default function ContactUsPage() {
                 </Form>
               </GridItem>
               <GridItem md={4} sm={4} className={classes.mlAuto}>
+              <br></br>
+
+              <center>
+              <Button 
+              target="_blank"
+              href="https://www.github.com/xxbattousaixx"
+              justIcon round color="github">
+                      <i className="fab fa-github" />
+                    </Button>
+                    &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    <Button 
+                    href="https://wa.me/19417302405"
+                    justIcon round color="whatsapp">
+                      <i className="fab fa-whatsapp" />
+                    </Button>
+                    &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+
+      <Button
+      target="_blank"
+      href="https://www.facebook.com/donato.a.carrassi"
+       justIcon round color="facebook">
+                      <i className="fab fa-facebook" />
+                    </Button>
+                    &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+
+      <Button
+      target="_blank"
+      href="https://www.instagram.com/donatoacarrassi/"
+       justIcon round color="instagram">
+                      <i className="fab fa-instagram" />
+                    </Button>
+              <br></br>
+                   
+                   
+                    </center>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+
                 <InfoArea
                   className={classes.info}
                   title="Find me online"
                   description={
+                    
+                    
                     <p>
+                      
                       dcarrassi@outlook.com <br /> Tampa Bay, Florida
                     </p>
                   }
@@ -240,14 +286,23 @@ export default function ContactUsPage() {
                   title="Give me a ring/text"
                   description={
                     <p>
-                      Donato Carrassi <br /> +1 813 336 2514 <br /> Mon - Fri,
+                      Donato Carrassi <br /> +1 941 730 2405 <br /> Mon - Fri,
                       18:00-22:00
                     </p>
                   }
                   icon={Phone}
                   iconColor="primary"
                 />
+
+<br></br>
+<br></br>
+<br></br>
+                    
               </GridItem>
+              <h3 
+            className={classNames(classes.main, classes.mainRaised)}>
+        
+            </h3>
             </GridContainer>
           </div>
         </div>

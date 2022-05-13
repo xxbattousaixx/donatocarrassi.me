@@ -14,6 +14,7 @@ import PresentationPage from "./views/PresentationPage/PresentationPage.js";
 import { createBrowserHistory } from "history";
 
 var hist = createBrowserHistory();
+
 // import "main.scss";
 ReactDOM.render(
   <Router history={hist}>

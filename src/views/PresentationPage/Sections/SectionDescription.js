@@ -23,11 +23,10 @@ export default function SectionDescription() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer justify="center">
+      <GridContainer justify="center">
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              My name is Donato Carrassi and I am a developer --
-              <br /> <i>your</i> solution is just waiting to be created.
+              My name is Donato, at your service.
             </h4>
           </GridItem>
         </GridContainer>
