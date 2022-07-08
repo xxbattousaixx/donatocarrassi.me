@@ -3,7 +3,8 @@
 require("path");
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from 'react-snapshot';
+
 import { Router, Route, Switch } from "react-router";
 import "./assets/scss/material-kit-pro-react.scss";
 
@@ -16,7 +17,7 @@ import { createBrowserHistory } from "history";
 var hist = createBrowserHistory();
 
 // import "main.scss";
-ReactDOM.render(
+render(
   <Router history={hist}>
     <Switch>
       <Route path="/blog-post" component={BlogPostPage} />

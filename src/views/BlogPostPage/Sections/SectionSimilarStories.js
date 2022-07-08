@@ -73,7 +73,7 @@ export default function SectionSimilarStories() {
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      This website is built with a React.js and serves as
+                      This website is built with React.js and serves as
                       referral hub for Tampa Bay company.
                     </p>
                   </CardBody>
@@ -95,14 +95,13 @@ export default function SectionSimilarStories() {
                   </CardHeader>
                   <CardBody>
                     <Success>
-                      <h6>DC7-NOTES</h6>
+                      <h6>Document Essentials</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href="https://dc7-notes.netlify.app">dc7-notes</a>
+                      <a href="https://docessentials.netlify.app">Document Essentials</a>
                     </h4>
                     <p className={classes.description}>
-                      Simple web app built using AWS that allows authentication
-                      and stores user notes.
+                      Website sample 
                     </p>
                   </CardBody>
                 </Card>
@@ -110,7 +109,7 @@ export default function SectionSimilarStories() {
               
             </GridContainer>
             <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://myvanmyworld.netlify.app">
@@ -142,7 +141,7 @@ export default function SectionSimilarStories() {
                 </Card>
               </GridItem>
               
-              <GridItem xs={12} sm={6} md={6}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://bandananirvana.com">
@@ -170,9 +169,7 @@ export default function SectionSimilarStories() {
                   </CardBody>
                 </Card>
               </GridItem>
-            </GridContainer>
-          </GridItem>
-              <GridItem xs={12} sm={3} md={3}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://dc7-test.netlify.app">
@@ -201,8 +198,11 @@ export default function SectionSimilarStories() {
                   </CardBody>
                 </Card>
               </GridItem>
+            </GridContainer>
+          </GridItem>
+             
         
-              <GridItem xs={12} sm={3} md={3}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://topdownrv.netlify.app">
@@ -230,7 +230,7 @@ export default function SectionSimilarStories() {
                   </CardBody>
                 </Card>
               </GridItem>
-              <GridItem xs={12} sm={3} md={3}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://dc7project.xyz">
@@ -254,14 +254,13 @@ export default function SectionSimilarStories() {
                       <a href="https://dc7project.xyz">dc7project.xyz</a>
                     </h4>
                     <p className={classes.description}>
-                      Classifieds website built with Laravel -- functions in
-                      three languages.
+                      Classifieds website built with Laravel as 3-month bootcamp project -- currently down
                     </p>
                   </CardBody>
                 </Card>
               </GridItem>
           
-              <GridItem xs={12} sm={3} md={3}>
+              <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
                     <a href="https://hackademy-30.gitlab.io/directory-donato-carrassi/">

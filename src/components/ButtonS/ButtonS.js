@@ -29,7 +29,7 @@ const MyDocument = () => (
     file={samplePDF}
     options={{ workerSrc: "/public/pdf.worker.js" }}
   >
-    <Page height={630} style={styles.page} pageNumber={1} />
+    <Page height={800} style={styles.page} pageNumber={1} />
   </Document>
 );
 
