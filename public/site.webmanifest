@@ -1,6 +1,6 @@
 {
-    "name": "DC7 project",
-    "short_name": "DC7",
+    "name": "www.documentessentials.com",
+    "short_name": "www.documentessentials.com",
     "icons": [
         {
             "src": "/android-chrome-144x144.png",
@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#c64040",
+    "background_color": "#c64040",
     "display": "standalone"
 }
