@@ -1,0 +1,51 @@
+.buttons-div-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vmax;
+}
+#resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation-reset-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #32bafa;
+    color : #fff;
+    border: 0;
+    border-radius: 4;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.react-pdf__Page__canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 102vh !important;
+    margin-left: -13px !important;
+}
+.particle-effect-button{
+    background-color: #b83196;
+    color: #fff;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .react-pdf__Page__canvas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw !important;
+        height: 95vh !important;
+        margin-left: -13px !important;
+    }
+  }
