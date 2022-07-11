@@ -46,64 +46,66 @@ export default function PresentationPage() {
         className={classes.parallax}
       >
         <div className={classes.container}>
-        <GridContainer 
-        justify="center">
-          <GridItem md={8} sm={8}>
-            <h3 
-            className={classNames(classes.main, classes.mainRaised)}>
-            <br></br>
-             
-            &nbsp;&nbsp; Welcome to your Developer Hub  &nbsp;-- &nbsp;&nbsp; a solution is waiting.
-              <br></br>
-              <br></br>
-              <center>
-              <Button 
-              target="_blank"
-              href="https://www.github.com/xxbattousaixx"
-              justIcon round color="github">
-                      <i className="fab fa-github" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-                    <Button 
+          <GridContainer justify="center">
+            <GridItem md={8} sm={8}>
+              <h3 className={classNames(classes.main, classes.mainRaised)}>
+                <br></br>
+                &nbsp;&nbsp; Welcome to your Developer Hub &nbsp;-- &nbsp;&nbsp;
+                a solution is waiting.
+                <br></br>
+                <br></br>
+                <center>
+                  <Button
+                    target="_blank"
+                    href="https://www.github.com/xxbattousaixx"
+                    justIcon
+                    round
+                    color="github"
+                  >
+                    <i className="fab fa-github" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
                     href="https://wa.me/19417302405"
-                    justIcon round color="whatsapp">
-                      <i className="fab fa-whatsapp" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-
-      <Button
-      target="_blank"
-      href="https://www.facebook.com/donato.a.carrassi"
-       justIcon round color="facebook">
-                      <i className="fab fa-facebook" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-
-      <Button
-      target="_blank"
-      href="https://www.instagram.com/donatoacarrassi/"
-       justIcon round color="instagram">
-                      <i className="fab fa-instagram" />
-                    </Button>
-              <br></br>
-              <br></br>
-                    </center>
-            </h3>
-          </GridItem>
-        </GridContainer>
+                    justIcon
+                    round
+                    color="whatsapp"
+                  >
+                    <i className="fab fa-whatsapp" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
+                    target="_blank"
+                    href="https://www.facebook.com/donato.a.carrassi"
+                    justIcon
+                    round
+                    color="facebook"
+                  >
+                    <i className="fab fa-facebook" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
+                    target="_blank"
+                    href="https://www.instagram.com/donatoacarrassi/"
+                    justIcon
+                    round
+                    color="instagram"
+                  >
+                    <i className="fab fa-instagram" />
+                  </Button>
+                  <br></br>
+                  <br></br>
+                </center>
+              </h3>
+            </GridItem>
+          </GridContainer>
         </div>
       </Parallax>
-
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription />
       </div>
-   
-   
-   
+
       <Footer
         content={
           <div>

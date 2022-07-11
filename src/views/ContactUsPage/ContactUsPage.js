@@ -224,57 +224,58 @@ export default function ContactUsPage() {
                 </Form>
               </GridItem>
               <GridItem md={4} sm={4} className={classes.mlAuto}>
-              <br></br>
+                <br></br>
 
-              <center>
-              <Button 
-              target="_blank"
-              href="https://www.github.com/xxbattousaixx"
-              justIcon round color="github">
-                      <i className="fab fa-github" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-                    <Button 
+                <center>
+                  <Button
+                    target="_blank"
+                    href="https://www.github.com/xxbattousaixx"
+                    justIcon
+                    round
+                    color="github"
+                  >
+                    <i className="fab fa-github" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
                     href="https://wa.me/19417302405"
-                    justIcon round color="whatsapp">
-                      <i className="fab fa-whatsapp" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-
-      <Button
-      target="_blank"
-      href="https://www.facebook.com/donato.a.carrassi"
-       justIcon round color="facebook">
-                      <i className="fab fa-facebook" />
-                    </Button>
-                    &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;
-
-      <Button
-      target="_blank"
-      href="https://www.instagram.com/donatoacarrassi/"
-       justIcon round color="instagram">
-                      <i className="fab fa-instagram" />
-                    </Button>
-              <br></br>
-                   
-                   
-                    </center>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-
+                    justIcon
+                    round
+                    color="whatsapp"
+                  >
+                    <i className="fab fa-whatsapp" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
+                    target="_blank"
+                    href="https://www.facebook.com/donato.a.carrassi"
+                    justIcon
+                    round
+                    color="facebook"
+                  >
+                    <i className="fab fa-facebook" />
+                  </Button>
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <Button
+                    target="_blank"
+                    href="https://www.instagram.com/donatoacarrassi/"
+                    justIcon
+                    round
+                    color="instagram"
+                  >
+                    <i className="fab fa-instagram" />
+                  </Button>
+                  <br></br>
+                </center>
+                <br></br>
+                <br></br>
+                <br></br>
 
                 <InfoArea
                   className={classes.info}
                   title="Find me online"
                   description={
-                    
-                    
                     <p>
-                      
                       dcarrassi@outlook.com <br /> Tampa Bay, Florida
                     </p>
                   }
@@ -294,15 +295,11 @@ export default function ContactUsPage() {
                   iconColor="primary"
                 />
 
-<br></br>
-<br></br>
-<br></br>
-                    
+                <br></br>
+                <br></br>
+                <br></br>
               </GridItem>
-              <h3 
-            className={classNames(classes.main, classes.mainRaised)}>
-        
-            </h3>
+              <h3 className={classNames(classes.main, classes.mainRaised)}></h3>
             </GridContainer>
           </div>
         </div>

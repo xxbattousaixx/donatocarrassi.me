@@ -36,20 +36,17 @@ export default function SectionSimilarStories() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-        <Particles/>
+      <Particles />
 
       <div className={classes.container}>
         <GridContainer>
-
           <GridItem md={12}>
             <h2 className={classes.title + " " + classes.textCenter}>
               PORTFOLIO WEBSITES
             </h2>
             <br />
             <GridContainer>
-
               <GridItem xs={12} sm={6} md={6}>
-
                 <Card blog>
                   <CardHeader image>
                     <a href="https://solafide-services.com">
@@ -73,8 +70,8 @@ export default function SectionSimilarStories() {
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      This website is built with React.js and serves as
-                      referral hub for Tampa Bay company.
+                      This website is built with React.js and serves as referral
+                      hub for Tampa Bay company.
                     </p>
                   </CardBody>
                 </Card>
@@ -98,15 +95,14 @@ export default function SectionSimilarStories() {
                       <h6>Document Essentials</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href="https://docessentials.netlify.app">Document Essentials</a>
+                      <a href="https://docessentials.netlify.app">
+                        Document Essentials
+                      </a>
                     </h4>
-                    <p className={classes.description}>
-                      Website sample 
-                    </p>
+                    <p className={classes.description}>Website sample</p>
                   </CardBody>
                 </Card>
               </GridItem>
-              
             </GridContainer>
             <GridContainer>
               <GridItem xs={12} sm={4} md={4}>
@@ -140,7 +136,7 @@ export default function SectionSimilarStories() {
                   </CardBody>
                 </Card>
               </GridItem>
-              
+
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
@@ -200,95 +196,94 @@ export default function SectionSimilarStories() {
               </GridItem>
             </GridContainer>
           </GridItem>
-             
-        
-              <GridItem xs={12} sm={4} md={4}>
-                <Card blog>
-                  <CardHeader image>
-                    <a href="https://topdownrv.netlify.app">
-                      <img src={topdown} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: "url(" + topdown + ")",
-                        opacity: "1",
-                      }}
-                    />
-                  </CardHeader>
-                  <CardBody>
-                    <Danger>
-                      <h6>
-                        <TrendingUp /> Top-Down RV</h6>
-                    </Danger>
-                    <h4 className={classes.cardTitle}>
-                      <a href="https://topdownrv.netlify.app">Top-Down RV</a>
-                    </h4>
-                    <p className={classes.description}>
-                      Sample site
-                    </p>
-                  </CardBody>
-                </Card>
-              </GridItem>
-              <GridItem xs={12} sm={4} md={4}>
-                <Card blog>
-                  <CardHeader image>
-                    <a href="https://dc7project.xyz">
-                      <img src={blog7} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: "url(" + blog7 + ")",
-                        opacity: "1",
-                      }}
-                    />
-                  </CardHeader>
-                  <CardBody>
-                    <Danger>
-                      <h6>
-                         PRESTO.IT
-                      </h6>
-                    </Danger>
-                    <h4 className={classes.cardTitle}>
-                      <a href="https://dc7project.xyz">dc7project.xyz</a>
-                    </h4>
-                    <p className={classes.description}>
-                      Classifieds website built with Laravel as 3-month bootcamp project -- currently down
-                    </p>
-                  </CardBody>
-                </Card>
-              </GridItem>
-          
-              <GridItem xs={12} sm={4} md={4}>
-                <Card blog>
-                  <CardHeader image>
-                    <a href="https://hackademy-30.gitlab.io/directory-donato-carrassi/">
-                      <img src={bape} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: "url(" + bape + ")",
-                        opacity: "1",
-                      }}
-                    />
-                  </CardHeader>
-                  <CardBody>
-                    <Danger>
-                      <h6>
-                      <TrendingUp /> Phone directory app (vanilla js)
-                      </h6>
-                    </Danger>
-                    <h4 className={classes.cardTitle}>
-                      <a href="https://hackademy-30.gitlab.io/directory-donato-carrassi/">Phone directory</a>
-                    </h4>
-                    <p className={classes.description}>
-                      Sample app that could be implemented into any website.
-                    </p>
-                  </CardBody>
-                </Card>
-              </GridItem>
+
+          <GridItem xs={12} sm={4} md={4}>
+            <Card blog>
+              <CardHeader image>
+                <a href="https://topdownrv.netlify.app">
+                  <img src={topdown} alt="..." />
+                </a>
+                <div
+                  className={classes.coloredShadow}
+                  style={{
+                    backgroundImage: "url(" + topdown + ")",
+                    opacity: "1",
+                  }}
+                />
+              </CardHeader>
+              <CardBody>
+                <Danger>
+                  <h6>
+                    <TrendingUp /> Top-Down RV
+                  </h6>
+                </Danger>
+                <h4 className={classes.cardTitle}>
+                  <a href="https://topdownrv.netlify.app">Top-Down RV</a>
+                </h4>
+                <p className={classes.description}>Sample site</p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={4} md={4}>
+            <Card blog>
+              <CardHeader image>
+                <a href="https://dc7project.xyz">
+                  <img src={blog7} alt="..." />
+                </a>
+                <div
+                  className={classes.coloredShadow}
+                  style={{
+                    backgroundImage: "url(" + blog7 + ")",
+                    opacity: "1",
+                  }}
+                />
+              </CardHeader>
+              <CardBody>
+                <Danger>
+                  <h6>PRESTO.IT</h6>
+                </Danger>
+                <h4 className={classes.cardTitle}>
+                  <a href="https://dc7project.xyz">dc7project.xyz</a>
+                </h4>
+                <p className={classes.description}>
+                  Classifieds website built with Laravel as 3-month bootcamp
+                  project -- currently down
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+
+          <GridItem xs={12} sm={4} md={4}>
+            <Card blog>
+              <CardHeader image>
+                <a href="https://hackademy-30.gitlab.io/directory-donato-carrassi/">
+                  <img src={bape} alt="..." />
+                </a>
+                <div
+                  className={classes.coloredShadow}
+                  style={{
+                    backgroundImage: "url(" + bape + ")",
+                    opacity: "1",
+                  }}
+                />
+              </CardHeader>
+              <CardBody>
+                <Danger>
+                  <h6>
+                    <TrendingUp /> Phone directory app (vanilla js)
+                  </h6>
+                </Danger>
+                <h4 className={classes.cardTitle}>
+                  <a href="https://hackademy-30.gitlab.io/directory-donato-carrassi/">
+                    Phone directory
+                  </a>
+                </h4>
+                <p className={classes.description}>
+                  Sample app that could be implemented into any website.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
         </GridContainer>
       </div>
     </div>

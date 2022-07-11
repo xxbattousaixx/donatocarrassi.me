@@ -1,9 +1,7 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable prettier/prettier */
 require("path");
-
 import React from "react";
-import { render } from 'react-snapshot';
+import { render } from "react-snapshot";
 
 import { Router, Route, Switch } from "react-router";
 import "./assets/scss/material-kit-pro-react.scss";

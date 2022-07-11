@@ -9,59 +9,57 @@ const stylesHandler = "style-loader";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
-  entry: path.resolve(__dirname, 'src/') + '/index.js',
+  entry: path.resolve(__dirname, "src/") + "/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    modules: [path.resolve(__dirname,'src'),'node_modules'],
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
     fallback: {
-      "stream": false,
-      "zlib": false,
-      "buffer": false
+      stream: false,
+      zlib: false,
+      buffer: false,
     },
-    extensions: ['.js', '.jsx']
-},
+    extensions: [".js", ".jsx"],
+  },
   devServer: {
     open: true,
     host: "localhost",
   },
   plugins: [
-    
     new MiniCssExtractPlugin({
-			filename: "[name].css",
-			chunkFilename: "[id].css"
-		}),
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
-    
     rules: [
       {
-        test:/\.js$/,
+        test: /\.js$/,
         use: [
           {
-        loader:'babel-loader',
-        options: {
-          cacheDirectory: true,
-          presets: ['@babel/env', '@babel/react']
-        }
-      },
-    ],        
-  },
-        {
-            test:/\.jsx$/,
-            use: [
-              {
-                loader: 'babel-loader',
-                options: {
-                  cacheDirectory: true,
-                  presets: ['@babel/react', '@babel/env']
-                }
-              },
-            ],        
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+              presets: ["@babel/env", "@babel/react"],
+            },
           },
+        ],
+      },
+      {
+        test: /\.jsx$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+              presets: ["@babel/react", "@babel/env"],
+            },
+          },
+        ],
+      },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
@@ -78,18 +76,18 @@ const config = {
         use: [stylesHandler, "css-loader"],
       },
       {
-       test: /\.s[ca]ss/i,
-				use: [stylesHandler,
-					MiniCssExtractPlugin.loader,
-					{
-						loader: "css-loader",
-				
-					},
-					{
-						loader: "sass-loader"
-					}
-				]
-			},
+        test: /\.s[ca]ss/i,
+        use: [
+          stylesHandler,
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "sass-loader",
+          },
+        ],
+      },
       // {
       //   test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
       //   type: "asset",
