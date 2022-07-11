@@ -82,7 +82,7 @@ export default function SectionSimilarStories() {
               <GridItem xs={12} sm={6} md={6}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="https://dc7-notes.netlify.app">
+                    <a href="https://docessentials.netlify.app">
                       <img src={blog8} alt="..." />
                     </a>
                     <div
