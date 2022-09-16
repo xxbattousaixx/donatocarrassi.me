@@ -238,7 +238,7 @@ export default function ContactUsPage() {
                   </Button>
                   &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
                   <Button
-                    href="https://wa.me/19417302405"
+                    href="https://wa.me/19419324619"
                     justIcon
                     round
                     color="whatsapp"
@@ -287,7 +287,7 @@ export default function ContactUsPage() {
                   title="Give me a ring/text"
                   description={
                     <p>
-                      Donato Carrassi <br /> +1 941 730 2405 <br /> Mon - Fri,
+                      Donato Carrassi <br /> +1 941 932 4619 <br /> Mon - Fri,
                       18:00-22:00
                     </p>
                   }

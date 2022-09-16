@@ -66,7 +66,7 @@ export default function PresentationPage() {
                   </Button>
                   &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
                   <Button
-                    href="https://wa.me/19417302405"
+                    href="https://wa.me/19419324619"
                     justIcon
                     round
                     color="whatsapp"
